@@ -12,11 +12,11 @@ import warnings
 warnings.filterwarnings('ignore')
 sys.path.insert(0, os.path.realpath('.'))
 
-from codes.residual_ratio_thresholding import residual_ratio_thresholding
+from rrt_codes.residual_ratio_thresholding import residual_ratio_thresholding
 
 class block_single_measurement_vector():
     def __init__(self):
-        self.norm_order=1 # norm used in the correlation step of Block OMP.
+        self.norm_order=2 # norm used in the correlation step of Block OMP.
         pass
     # main_function. X is the design matrix. Y is the observation vector. block_size is the size of blocks in unknonw vector B.
     # algorithm has currently support only for 'BMMV-OMP'.
