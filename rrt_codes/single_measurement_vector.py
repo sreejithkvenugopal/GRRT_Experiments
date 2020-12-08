@@ -11,7 +11,7 @@ from sklearn import linear_model
 import warnings
 warnings.filterwarnings('ignore')
 sys.path.insert(0, os.path.realpath('.'))
-from codes.residual_ratio_thresholding import residual_ratio_thresholding
+from rrt_codes.residual_ratio_thresholding import residual_ratio_thresholding
 
 class single_measurement_vector():
     def __init__(self):
